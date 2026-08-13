@@ -3,8 +3,13 @@
 #ifndef TASKSET_HPP
 #define TASKSET_HPP
 
+struct Task {
+    std::string name;
+    bool comp = false;
+};
 
-void addTask(std::vector<std::string>&v, std::string a);
-void viewTask(const std::vector<std::string>&v);
+void addTask(std::vector<Task>& v, std::string a);
+void viewTask(const std::vector<Task>& v);
+void deleteTask(std::vector<Task>&v, std::string b);
 
 #endif

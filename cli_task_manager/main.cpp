@@ -5,10 +5,10 @@
 
 int main(){
     int choice = 0;
-    std::vector<std::string>taskList;
+    std::vector<Task>taskList;
     try {
         while (choice != 5){
-            std::cout<<"Task List: \n Add:1 \n View: 2 \n Choice: ";
+            std::cout<<"Task List:\nAdd:1\nView:2\nChoice: ";
             std::cin>>choice;
             if (choice == 1){
                 std::string x;
