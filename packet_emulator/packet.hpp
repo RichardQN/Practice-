@@ -1,6 +1,7 @@
 #include <string>
 #include <vector>
 #include <cstdint>
+#include <iostream>
 
 #ifndef PACKET_H
 #define PACKET_H
@@ -15,9 +16,10 @@ struct Packet {
 };
 
 class packetSerial {
-    std::vector<uint8_t> serialize(const Packet& packet);
-    Packet deserialize(const std::vector<uint8_t>& serial);
-    //bool valid(Packet packet, uint8_t cmd);
+    public:
+        static std::vector<uint8_t> serialize(const Packet& packet);
+        static Packet deserialize(const std::vector<uint8_t>& serial);
+        //bool valid(Packet packet, uint8_t cmd);
 
 };
 
