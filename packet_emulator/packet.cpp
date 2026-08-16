@@ -1,5 +1,7 @@
 #include "packet.hpp"
 
+//packet init and functional commmands 
+
 std::vector<uint8_t> packetSerial::serialize(const Packet& packet){
     std::vector<uint8_t> res;
     res.push_back(packet.header);

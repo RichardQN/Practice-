@@ -2,6 +2,7 @@
 #include "packet.hpp"
 #include <iostream>
 
+// Emulation for ground control to flight control devices and command handling
 
 FlightController::FlightController(int alt){
     altitude = alt;
