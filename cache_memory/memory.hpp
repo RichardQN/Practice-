@@ -14,8 +14,8 @@ class Memory {
     public:
 
         Memory();
-        uint8_t read(uint16_t address);
-        void write(uint16_t address, uint8_t value);
+        static uint8_t read(uint16_t address);
+        static void write(uint16_t address, uint8_t value);
 
 };
 
